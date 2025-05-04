@@ -17,8 +17,9 @@ public class SwapWithoutThirdVar {
             no2 = no1 - no2;
             no1 = no1 - no2;
             System.out.println("The numbers after swapping are:" + no1 + " and " + no2);
-        } catch (IOException e) {
-            System.out.println("There is an error:" + e.getMessage());
+        } catch (NumberFormatException | IOException e) {
+            System.out.println("There is an error:");
+            e.printStackTrace();
         }
     }
 
